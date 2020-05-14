@@ -1,0 +1,26 @@
+{
+  "name": "testing-automated-issues",
+  "version": "1.0.0",
+  "description": "testing-automated-issues",
+  "main": "api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/Elyes00/testing-automated-issues.git"
+  },
+  "author": "elyes ben amor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/Elyes00/testing-automated-issues/issues"
+  },
+  "homepage": "https://gitlab.com/Elyes00/testing-automated-issues#readme",
+  "dependencies": {
+    "@gitbeaker/node": "^19.5.1",
+    "axios": "^0.19.2",
+    "got": "^11.1.3",
+    "inquirer": "^7.1.0",
+    "slack-notify": "^0.1.7"
+  }
+}
