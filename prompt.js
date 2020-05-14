@@ -56,7 +56,7 @@ const main = async () => {
 					{
 						fallback: 'closing issues',
 						fields: [
-							{ title: 'issue params', value: result.get(selectedIssueIid), short: true }
+							{ title: 'issue params', value: result.selectedIssueIid, short: true }
 						]
 					}
 				]
