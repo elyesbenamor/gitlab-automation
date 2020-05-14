@@ -50,7 +50,7 @@ const main = async () => {
 			}
 		)
 		console.log(selectedIssueIid, selectedProjectId, isConfirmed);
-			 alert = slack.alert({
+			const alert= await slack.alert({
 				text: 'sending alert from gitlab',
 				attachments: [
 					{
@@ -61,12 +61,13 @@ const main = async () => {
 					}
 				]
 			});
+			console.log('sending alert',alert)
 
 		if(isConfirmed){
 			const result = await gitlabApi.closeIssue(selectedProjectId, selectedIssueIid);
 			console.log('result', result);
 			if (result === 'closed'){
-				 send = slack.send({
+				const send = await send = slack.send({
 					channel: '#myCustomChannelName',
 					text: 'sending alert for closed issures'
 				});
